@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+@font-face {
+	font-family: chewy;
+	src: url("../public/fonts/Chewy-Regular.ttf");
+}
+@font-face {
+	font-family: lexend;
+	src: url("../public/fonts/Lexend-Regular.ttf");
+}
+@font-face {
+	font-family: lexend-light;
+	src: url("../public/fonts/Lexend-Light.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	background-color: #e5e5f7;
+	background-image: linear-gradient(135deg, #93B48B 25%, transparent 25%), linear-gradient(225deg, #93B48B 25%, transparent 25%), linear-gradient(45deg, #93B48B 25%, transparent 25%), linear-gradient(315deg, #93B48B 25%, #e5e5f7 25%);
+	background-position: 10px 0, 10px 0, 0 0, 0 0;
+	background-repeat: repeat;
+	background-size: 20px 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Body */
+.body-section {
+	margin: 0 10% 3cm 10%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #D6D6D6;
+	padding: 0.5cm;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body-section h1 {
+	text-align: center;
+	color: #333333;
+	font-family: chewy, 'Calibri';
+	font-size: 56px;
 }
-
-.App-link {
-  color: #61dafb;
+.body-section section {
+	margin: 0.5cm;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Homepage */
+.form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 5px;
+	padding: 0 25%;
+	font-family: lexend, 'Calibri';
+	row-gap: 0.5cm;
 }
+.form label {
+	font-size: 18px;
+}
+.form select, input {
+	box-sizing: border-box;
+	margin: 5px 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	padding: 9px;
+	width: 100%;
+	font-family: 'Arial', 'Trebuchet MS', sans-serif;
+	font-size: 18px;
+}
+button {
+	box-sizing: border-box;
+	transition: 0.1s;
+	margin: 5px 0;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	background-color: rgb(42, 173, 129);
+	padding: 9px;
+	width: 100%;
+	color: white;
+	font-family: 'Arial', 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+button:hover {
+	transition: 0.1s;
+	background-color: rgb(40, 141, 107);
+	cursor: pointer;
+}
+.form > div > label {
+	display: block;
+}
+.separator {
+	height: 1cm;
+}
+.result-number {
+	text-align: center;
+	font-family: lexend-light, 'Calibri';
+}
+.results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-family: lexend;
+	gap: 20px;
+}
+.results > div {
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #ebebeb;
+	padding: 0 0.5cm;
+	width: 45%;
+	overflow: auto;
+}
+.summary {
+	font-family: lexend-light, 'Arial';
+}
+.grey {
+	color: rgb(45, 45, 45);
+}
+/* Bookings */
+/* Confirmation */
