@@ -1,4 +1,5 @@
 # DBA Assignment 3
+![demo](./airbnbdemo.gif)
 
 ## Table of Contents
 * [General info](#general-info)
